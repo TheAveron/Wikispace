@@ -1,0 +1,46 @@
+@keyframes typing {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+  
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: white; }
+}
+
+
+.titlebox{
+    background-color: black;
+    background-image: url("images/milky_way.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 45vh;
+    padding-bottom: 45vh;
+    padding-left: 15vh;
+    background-position: right;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titlebox h1{
+    width:0;
+    max-width: fit-content;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: 
+      typing 10s steps(100, end) forwards,
+      blink .8s infinite;
+}
+
+.content .present{
+    margin: 30px;
+
+    backdrop-filter: blur(2px) saturate(100%);
+    -webkit-backdrop-filter: blur(2px) saturate(100%);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
+}

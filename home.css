@@ -29,7 +29,7 @@
     border-right: .15em solid white;
     white-space: nowrap;
     animation: 
-      typing 10s steps(100, end) forwards,
+      typing 5s steps(100, end) forwards,
       blink .8s infinite;
 }
 

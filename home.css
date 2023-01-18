@@ -23,7 +23,6 @@
     padding-top: 45vh;
     padding-bottom: 45vh;
     padding-left: 15vh;
-    padding-right:15vh;
     background-position: right;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -31,6 +30,8 @@
 
 
 .titlebox h1{
+	margin-left: 15vh ;
+	margin-right: 15vh;
     width:0;
     max-width: fit-content;
     overflow: hidden;

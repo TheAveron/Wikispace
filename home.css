@@ -1,8 +1,14 @@
-@keyframes typing {
+@keyframes typing1 {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes typing2 {
     from { width: 0%; }
     to { width: 100%; }
 }
   
+
 @keyframes blink {
     from { border-color: transparent; }
     to { border-color: white; }
@@ -22,25 +28,71 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
 .titlebox h1{
     width:0;
     max-width: fit-content;
     overflow: hidden;
-    border-right: .15em solid white;
+    border-right: .15em solid transparent;
     white-space: nowrap;
+
     animation: 
-      typing 5s steps(100, end) forwards,
+      typing1 5s steps(100, end) forwards,
       blink .8s infinite;
+
+    margin-bottom: 15px;
+    font-weight: 300;
 }
 
-.content .present{
-    margin: 30px;
+.titlebox p{
+    width:0;
+    max-width: fit-content;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
 
-    backdrop-filter: blur(2px) saturate(100%);
-    -webkit-backdrop-filter: blur(2px) saturate(100%);
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    box-shadow: rgba(0,0,0,0.5);
-    border-top: 1px solid rgba(255, 255, 255, 1);
-    border-left: 1px solid rgba(255, 255, 255, 1);
+
+    animation: 
+      typing1 5s steps(100, end) forwards,
+      blink .8s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.content{
+    display: block;
+}
+
+.presentation{
+    margin: 5%;
+    backdrop-filter: blur(1px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    box-shadow: rgba(0,0,0,0.9);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right:10%;
+    padding-left: 10%;
+}
+
+.presentation h1{
+    color:white;
+    font-weight: 500;
+}
+
+.presentation p{
+    margin-top: 15px;
+}
+
+.presentation .link a,i{
+    color: rgb(0, 162, 255);
+}
+
+.presentation .link a:hover{
+    text-decoration: underline;
 }

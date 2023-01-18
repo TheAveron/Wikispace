@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://glitch.com/favicon.ico">
+
+
+        <title>Questionnaire</title>
+
+        <link rel="stylesheet" type="text/css" href="../../base.css">
+        <link rel="stylesheet" type="text/css" href="questionnaire.css">
+
+        <script src="questionnaire.js""></script>
+    </head>
+    <body>
+        <div class="page">
+            <nav class="navbar">
+                <button id="home"><a href="../../index.html">Home</a></button>
+                <button id="about"><a href="../about/about.html">about</a></button>
+                <button id="questionnaire"><a href="questionnaire.html"">qcm</a></button>
+            </nav>
+            <div class="content">
+                <div class="title">
+                    <h1>CQM du wikispace</h1>
+                </div>
+
+                <form class="qcm">
+                    <div class="question" id="1">
+                        <h3>Question 1</h3>
+                        <p> Quelle est le rayon de la Terre ?</p>
+                        <input type="text" class="reponse" name="Réponse 1" id="Id_rep1" value="">
+                        <input type="button" value="Valider" onclick="Validation1();">
+                    </div>
+                    <div class="question" id="2">
+                        <h3>Question 2</h3>
+                        <p>Quelle est la température moyenne de la planète Mars ?</p>
+                        <input type="text" class="reponse" name="Réponse 2" id="Id_rep2" value="">
+                        <input type="button" value="Valider" onclick="Validation2();">
+                    </div>
+                    <div class="question" id="3">
+                        <h3>Question 3</h3>
+                        <p>Quel est le nom de la première sonde à avoir survolé neptune ?</p>
+                        <input type="text" class="reponse" name="Réponse 3" id="Id_rep3" value="">
+                        <input type="button" value="Valider" onclick="Validation3();">
+                    </div>
+                    <div class="question" id="4">
+                        <h3>Question 4</h3>
+                        <p>Combien de temps dure un jour vénusien ?</p>
+                        <input type="text" class="reponse" name="Réponse 4" id="Id_rep4" value="">
+                        <input type="button" value="Valider" onclick="Validation4();">
+                    </div>
+                </form>
+                <div class="score">
+                    <p>Votre score est :</p>
+                    <p id='resultat'>dd</p>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>
+              &copy; Copyright V.A - 2023 - All Right reserved
+            </p>
+          </footer>
+    </body>
+</html>

@@ -5,13 +5,12 @@
     font-weight: 300;
     margin: 0;
     padding: 0;
-    color: #fff;
     text-decoration: none;
     border: none;
-    
 }
 
 body{
+    color: #fff;
     background-color: #020703;
     justify-content: center;
     align-items: center;
@@ -24,21 +23,22 @@ body{
     padding: 5px;
     display: flex;
     justify-content: right;
-    background-color: #020703;  
 }
 
-.navbar button{
-    display: inline-block;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 1em;
+
+.navbar a{
+    margin: 0.3%;
+    padding: 0.7%;
+    background-color: #020703;
+    color: white;
+    border-radius: 10px;
 }
 
-.navbar button a{
-    color: #000;
-    font-size: 15px;
+.navbar a:hover{
+    background-color: white;
+    color: #020703;
+    text-decoration: none;
 }
-
 
 footer{
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -46,4 +46,19 @@ footer{
     background-color: rgba(0, 162, 255, 0.5);
     color: #fff;
     text-align: center;
+}
+
+a{
+    color: rgb(0, 162, 255);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+p{
+    text-justify: inter-word;
+    text-align: justify;
 }

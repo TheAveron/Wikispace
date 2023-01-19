@@ -1,11 +1,11 @@
 @keyframes typing1 {
-    from { width: 0%; }
-    to { width: 100%; }
+    from { width: 0; }
+    to { width:26ch; }
 }
 
 @keyframes typing2 {
-    from { width: 0%; }
-    to { width: 100%; }
+    from { width: 0; }
+    to { width: 95ch; }
 }
   
 
@@ -16,30 +16,36 @@
 
 
 .titlebox{
-    background-color: black;
+    background-color: transparent;
     background-image: url("images/milky_way.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 45vh;
     padding-bottom: 45vh;
     padding-left: 15vh;
+    padding-right: 15vh;
     background-position: right;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-size-adjust:auto;
 }
 
 
-.titlebox h1{
-	margin-left: 15vh ;
-	margin-right: 15vh;
+.titlebox #text{
+    text-size-adjust:inherit;
     width:0;
-    max-width: fit-content;
-    overflow: hidden;
-    border-right: .15em solid transparent;
+    font-size:1em;
     white-space: nowrap;
 
+}
+
+.titlebox h1{
+    max-width:fit-content;
+    overflow: hidden;
+    border-right: .15em solid transparent;
     animation: 
-      typing1 5s steps(100, end) forwards,
+      typing1 3s steps(27, end) forwards,
       blink .8s infinite;
 
     margin-bottom: 15px;
@@ -47,20 +53,13 @@
 }
 
 .titlebox p{
-    width:0;
     max-width: fit-content;
-    overflow: hidden;
     border-right: .15em solid transparent;
-    white-space: nowrap;
-
-
+    overflow: hidden;
     animation: 
-      typing1 5s steps(100, end) forwards,
+      typing2 3s steps(96, end) forwards,
       blink .8s infinite;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    animation-delay: 3s;
 }
 
 .content{
@@ -68,22 +67,21 @@
 }
 
 .presentation{
-    margin: 5%;
-    backdrop-filter: blur(1px) saturate(100%);
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 30px;
-    box-shadow: rgba(0,0,0,0.9);
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right:10%;
-    padding-left: 10%;
+    background-color: white;
+    padding: 5%;
+    height: 100%;
+    width: auto;
+    color: #020703;
+    display: grid;
+    grid-column: 4fr 1fr;
 }
 
-.presentation h1{
-    color:white;
+.text{
+    padding: 10%;
+    padding-left: 2%;
+}
+
+#presentation #title{
     font-weight: 500;
 }
 
@@ -91,10 +89,16 @@
     margin-top: 15px;
 }
 
-.presentation .link a,i{
-    color: rgb(0, 162, 255);
+#sys-link{
+    margin-top: 10px;
 }
 
-.presentation .link a:hover{
-    text-decoration: underline;
+#img-sol{
+    margin-top: 15px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 15px;
+    width:40vw;
 }

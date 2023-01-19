@@ -27,8 +27,8 @@ body{
 
 
 .navbar a{
-    margin: 0.3%;
-    padding: 0.7%;
+    margin: 0.3vw;
+    padding: 0.7vw;
     background-color: #020703;
     color: white;
     border-radius: 10px;

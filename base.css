@@ -21,7 +21,6 @@ body{
     width: 100%;
 }
 
-
 .navbar{
     padding: 5px;
     display: flex;
@@ -32,7 +31,6 @@ body{
 .navbar a{
     margin: 0.3vh;
     padding: 1.5vh;
-    background-color: #020703;
     color: white;
     border-radius: 10px;
 }

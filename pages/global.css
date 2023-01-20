@@ -1,0 +1,32 @@
+body{
+    background-size: cover;
+}
+
+
+.content{
+    margin-left:15vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 10%;
+    width: auto;
+    height:auto;
+
+    background-color: rgba(255, 255, 255, 0.6);;
+    color: #020703;
+
+    text-align: center;
+}
+
+@media (max-width:800px) 
+{
+    .content{
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+h2{
+    margin-bottom: 2%;
+}

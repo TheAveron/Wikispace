@@ -1,25 +1,5 @@
-.content{
-    margin-left:15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding: 10%;
-    width: auto;
-    height:auto;
-
-    background-color: white;
-    color: #020703;
-
-    text-align: center;
-}
-
-@media (max-width:800px) 
-{
-    .content{
-        margin-top: 5vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
+body{
+    background-image: url("../../images/deep_space.jpg");
 }
 
 
@@ -32,10 +12,6 @@ li{
     list-style-type: none;
 }
 
-h2{
-    margin-bottom: 2%;
-}
-
 h3{
     margin-top: 4%;
     margin-bottom: 2%;
@@ -46,7 +22,7 @@ h3{
 }
 
 
-a{
+.liens a{
     color: #020703;
     text-decoration: underline;
 }

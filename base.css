@@ -62,3 +62,23 @@ p{
     text-justify: inter-word;
     text-align: justify;
 }
+
+h1{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 600;
+}
+
+
+@media (max-width: 800px)
+{
+    *{
+        font-size: calc(0.95 * var(--sizetext));
+    }
+}
+
+*{
+    --sizetext : 1em;
+}

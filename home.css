@@ -35,9 +35,7 @@
 .titlebox #text{
     text-size-adjust:inherit;
     width:0;
-    font-size:1em;
     white-space: nowrap;
-
 }
 
 .titlebox h1{

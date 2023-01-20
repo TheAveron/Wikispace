@@ -7,6 +7,8 @@
     padding: 0;
     text-decoration: none;
     border: none;
+
+    --sizetext : 1em;
 }
 
 body{
@@ -56,8 +58,6 @@ a:hover{
     text-decoration: underline;
 }
 
-
-
 p{
     text-justify: inter-word;
     text-align: justify;
@@ -77,8 +77,4 @@ h2{
     *{
         font-size: calc(0.95 * var(--sizetext));
     }
-}
-
-*{
-    --sizetext : 1em;
 }

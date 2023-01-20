@@ -22,8 +22,8 @@
     background-repeat: no-repeat;
     padding-top: 45vh;
     padding-bottom: 45vh;
-    padding-left: 15vh;
-    padding-right: 15vh;
+    padding-left:10vw;
+    padding-right: 15vw;
     background-position: right;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -33,7 +33,6 @@
 
 
 .titlebox #text{
-    text-size-adjust:inherit;
     width:0;
     white-space: nowrap;
 }
@@ -51,6 +50,8 @@
 }
 
 .titlebox p{
+
+    font-size: 1em;
     max-width: fit-content;
     border-right: .15em solid transparent;
     overflow: hidden;
@@ -59,6 +60,31 @@
       blink .8s infinite;
     animation-delay: 3s;
 }
+
+
+@media (max-width:1050px) {
+    .titlebox p{
+        font-size:0.6em;
+    }
+}
+
+@media (max-width:600px) {
+    .titlebox h1{
+        animation: none;
+        overflow:visible;
+    }
+    .titlebox p{
+        animation: none;
+        overflow:visible;
+        font-size: 0.4em;
+    }
+    .titlebox{
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+
 
 .content{
     display: block;

@@ -1,6 +1,6 @@
 .content{
-    margin-left:15%;
-    margin-right: 15%;
+    margin-left:15vw;
+    margin-right: 15vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
     padding: 10%;
@@ -9,16 +9,32 @@
 
     background-color: white;
     color: #020703;
+    text-align: center;
+}
+
+
+@media (max-width:800px) 
+{
+    .content{
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 }
 
 .content .title{
     margin-bottom: 2%;
 }
 
-
 h2{
-    margin-top: 1%;
-    margin-bottom: 0.5%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+#sous-titre{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 #sys_sol{

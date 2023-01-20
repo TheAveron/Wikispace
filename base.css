@@ -21,6 +21,7 @@ body{
     width: 100%;
 }
 
+
 .navbar{
     padding: 5px;
     display: flex;
@@ -30,7 +31,7 @@ body{
 
 .navbar a{
     margin: 0.3vh;
-    padding: 0.7vh;
+    padding: 1.5vh;
     background-color: #020703;
     color: white;
     border-radius: 10px;
@@ -48,6 +49,8 @@ footer{
     background-color: rgba(0, 162, 255, 0.5);
     color: #fff;
     text-align: center;
+
+
 }
 
 a{
@@ -61,6 +64,7 @@ a:hover{
 p{
     text-justify: inter-word;
     text-align: justify;
+    font-weight: 400;
 }
 
 h1{
@@ -68,13 +72,29 @@ h1{
 }
 
 h2{
-    font-weight: 600;
+    font-weight: 500;
 }
 
+h3{
+    font-weight: 600;
+    font-size:1.4em;
+}
 
 @media (max-width: 800px)
 {
     *{
         font-size: calc(0.95 * var(--sizetext));
+    }
+
+    h1{
+        font-size: calc(1.4 * var(--sizetext));
+    }
+
+    h3{
+        font-size: calc(1.1 *var(--sizetext));
+    }
+
+    .navbar{
+        justify-content: center;
     }
 }

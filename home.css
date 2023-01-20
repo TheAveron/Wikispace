@@ -61,10 +61,9 @@
     animation-delay: 3s;
 }
 
-
 @media (max-width:1050px) {
     .titlebox p{
-        font-size:0.6em;
+        font-size:0.8em;
     }
 }
 

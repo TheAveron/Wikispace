@@ -78,6 +78,11 @@ h3{
     font-size:1.4em;
 }
 
+h4{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
 @media (max-width: 800px)
 {
     *{
@@ -90,6 +95,10 @@ h3{
 
     h3{
         font-size: calc(1.1 *var(--sizetext));
+    }
+
+    h4{
+        font-size: calc(0.8 * var(--sizetext));
     }
 
     .navbar{

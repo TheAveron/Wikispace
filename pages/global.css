@@ -1,5 +1,6 @@
 body{
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -12,7 +13,7 @@ body{
     width: auto;
     height:auto;
 
-    background-color: rgba(255, 255, 255, 0.6);;
+    background-color: rgba(255, 255, 255, 0.6);
     color: #020703;
 
     text-align: center;
@@ -27,6 +28,38 @@ body{
     }
 }
 
-h2{
+h2,h1, h4{
     margin-bottom: 2%;
+}
+
+h2,h4{
+    margin-top: 3%;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid #020703;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 10px;
+    border:2px solid #020703;
+}
+
+th{
+    font-weight: 500;
+}
+
+
+abbr{
+    display: inline;
+}
+
+#a1, #a2{
+    color: #020703;
+    text-decoration: underline;
 }

@@ -3,7 +3,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
 .content{
     margin-left:15vw;
     margin-right: 15vw;
@@ -36,7 +35,6 @@ h2,h4{
     margin-top: 3%;
 }
 
-
 table{
     margin-left: auto;
     margin-right: auto;
@@ -63,3 +61,32 @@ abbr{
     color: #020703;
     text-decoration: underline;
 }
+
+
+a img{
+    color: zoom-in;
+}
+
+.text{
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+}
+
+#planète{
+    margin-top: 3%;
+    width: 30%;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#map{
+    margin-top: 2%;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+    

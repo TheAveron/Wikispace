@@ -105,3 +105,17 @@ h4{
         justify-content: center;
     }
 }
+
+abbr{
+    display: inline;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+a img{
+    cursor: zoom-in;
+    margin-top: 2%;
+    position: relative;
+    width: 100%;
+    height: auto;
+}

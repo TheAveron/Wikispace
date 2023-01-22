@@ -78,8 +78,6 @@
     }
     .titlebox{
         text-align: center;
-        padding-left: auto;
-        padding-right: auto;
     }
 }
 
@@ -95,12 +93,10 @@
     width: auto;
     color: #020703;
     display: grid;
-    grid-column: 4fr 1fr;
 }
 
 .presentation .text{
-    padding: 10%;
-    padding-left: 2%;
+    padding: 8%;
 }
 
 .text #title{

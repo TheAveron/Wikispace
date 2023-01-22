@@ -1,5 +1,5 @@
 body{
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -54,19 +54,9 @@ th{
     font-weight: 500;
 }
 
-
-abbr{
-    display: inline;
-}
-
 #a1, #a2{
     color: #020703;
     text-decoration: underline;
-}
-
-
-a img{
-    color: zoom-in;
 }
 
 .text{
@@ -91,9 +81,13 @@ a img{
     min-width: 10px;
 }
 
-#map{
-    margin-top: 2%;
-    position: relative;
-    width: 100%;
-    height: auto;
+ol{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+li{
+    text-align: left;
+    font-weight: 400;
 }

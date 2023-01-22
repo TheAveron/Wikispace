@@ -1,11 +1,11 @@
 @keyframes typing1 {
     from { width: 0; }
-    to { width:26ch; }
+    to { width:25ch; }
 }
 
 @keyframes typing2 {
     from { width: 0; }
-    to { width: 95ch; }
+    to { width: 100ch; }
 }
   
 
@@ -31,8 +31,7 @@
     text-size-adjust:auto;
 }
 
-
-.titlebox #text{
+.titlebox .text{
     width:0;
     white-space: nowrap;
 }
@@ -99,13 +98,13 @@
     grid-column: 4fr 1fr;
 }
 
-.text{
+.presentation .text{
     padding: 10%;
     padding-left: 2%;
 }
 
-#presentation #title{
-    font-weight: 500;
+.text #title{
+    font-weight: 600;
 }
 
 .presentation p{

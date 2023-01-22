@@ -16,6 +16,7 @@ body{
     color: #020703;
 
     text-align: center;
+    justify-content: center;
 }
 
 @media (max-width:800px) 
@@ -75,14 +76,20 @@ a img{
 
 #planète{
     margin-top: 3%;
-    width: 30%;
+    width: 20vw;
     display: flex;
-    padding: 2%;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
+.planète{
+    white-space: nowrap;
+}
 
+#sep{
+    width: 3vw;
+    min-width: 10px;
+}
 
 #map{
     margin-top: 2%;
@@ -90,4 +97,3 @@ a img{
     width: 100%;
     height: auto;
 }
-    

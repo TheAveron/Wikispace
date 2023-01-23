@@ -12,11 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="../../base.css">
 		<link rel="stylesheet" type="text/css" href="questionnaire.css">
 	
-		<link rel="stylesheet" type="text/css" href="../global.css">
+
 		
 		<script src="questionnaire.js"></script>
 	</head>
-	<body>
+	<body style="background-image: url('../../images/carina_nebula.png');">
 		<div class="page">
 			<nav class="navbar">
 				<a id="home" class="button" href="../../index.html">Accueil</a>
@@ -28,39 +28,65 @@
 				<div class="title"><h1>CQM du wikispace</h1></div>
 				
 				<form class="qcm">
-					
-					<div class="question" id="1">
+					<div class="question" id="q1">
 						<h3>Question 1</h3>
-						<p> Quelle est le rayon de la Terre ?</p>
+						<p> Quel est le rayon de la Terre ? (réponse acceptée à la centaine près)</p>
 						<input type="text" class="reponse" name="Réponse 1" id="Id_rep1" value="">
-						<input type="button" value="Valider" onclick="Validation1();">
+						<input id="button1" class="button-r" type="button" value="Valider" onclick="Validation(1);">
 					</div>
 					
-					<div class="question" id="2">
+					<div class="question" id="q2">
 						<h3>Question 2</h3>
-						<p>Quelle est la température moyenne de la planète Mars ?</p>
+						<p>Quelle est la température moyenne de la planète Mars ? (ne pas préciser l'unité, réponse acceptée à la dizaine de kelvin près)</p>
 						<input type="text" class="reponse" name="Réponse 2" id="Id_rep2" value="">
-						<input type="button" value="Valider" onclick="Validation2();">
+						<input id="button2" class="button-r" type="button" value="Valider" onclick="Validation(2);">
 					</div>
 					
-					<div class="question" id="3">
+					<div class="question" id="q3">
 						<h3>Question 3</h3>
-						<p>Quel est le nom de la première sonde à avoir survolé neptune ?</p>
+						<p>Combien de lunes possède Jupiter ? (seule la réponse exacte sera acceptée)</p>
 						<input type="text" class="reponse" name="Réponse 3" id="Id_rep3" value="">
-						<input type="button" value="Valider" onclick="Validation3();">
+						<input id="button3" class="button-r" type="button" value="Valider" onclick="Validation(3);">
 					</div>
 					
-					<div class="question" id="4">
+					<div class="question" id="q4">
 						<h3>Question 4</h3>
-						<p>Combien de temps dure un jour vénusien ?</p>
+						<p>Combien de temps dure un jour vénusien ? (ne pas préciser l'unité, seule la réponse exacte sera acceptée)</p>
 						<input type="text" class="reponse" name="Réponse 4" id="Id_rep4" value="">
-						<input type="button" value="Valider" onclick="Validation4();">
+						<input id="button4" class="button-r" type="button" value="Valider" onclick="Validation(4);">
+						
+					</div>
+
+					<div class="question" id="q5">
+						<h3>Question 5</h3>
+						<p>Combien d'anneaux possède Jupiter ?</p>
+						<select id="choix1" name="anneaux de Jupiter">
+							<option value="1"> On ne sait pas </option>
+							<option value="2"> 13 </option>
+							<option value="3"> 3 </option>
+							<option value="4"> 5 </option>
+						</select>
+						<input id="buttons1" class="button-v" type="button" value="Valider" onclick="selection(1);">
+							
+					</div>
+
+
+					<div class="question" id="q6">
+						<h3>Question 6</h3>
+						<p>La Terre est la planète la plus dense du système Solaire.</p>
+						<select id="choix2" name="Densité de la Terre">
+							<option value="1"> Vrai </option>
+							<option value="2"> Faux </option>
+						</select>
+						<input id="buttons2" class="button-v" type="button" value="Valider" onclick="selection(2);">
+
 					</div>
 				</form>
 				
 				<div class="score">
-					<p>Votre score est :</p>
-					<p id='resultat'>dd</p>
+					<input class="button-v" type="button" value="Terminer" onclick="terminer();">
+					<p>Votre score est : &ensp;</p>
+					<p id='resultat'>resultat</p>
 				</div>
 			</div>
 		</div>

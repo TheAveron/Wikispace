@@ -1,37 +1,75 @@
 var score;
 score=0;
 
-function Validation1 ()
-{
-    var reponse = parseint(document.getElementById("Id_rep1").value);
 
-    if (reponse<= 6400 && reponse >= 6300)
+
+
+function Validation (number)
+{
+    
+    console.log(number);
+    const reponse = parseInt(document.getElementById("Id_rep".concat(number)).value);
+    
+    const button = document.getElementById("button".concat(number));
+    button.style.width = 0;
+    button.style.height = 0;
+    button.style.padding = 0;
+
+
+    if (number == 1 && reponse<= 6400 && reponse >= 6300)
     {score=score+1;}
+    else if (number == 2 && reponse >= 220 && reponse <= 230)
+    {score=score+1;}
+    else if (number == 3 && reponse==80)
+    {score=score+1;}
+    else if (number == 4 && reponse== 243)
+    {score=score+1;}
+
+    console.log(reponse);
 }
 
-function Validation2 ()
+function selection(number)
 {
-    var reponse = parseint(document.getElementById("Id_rep2").value);
+   const selecteur = document.getElementById("choix".concat(number));
+   const monChoix=selecteur[selecteur.selectedIndex];
 
-    if (reponse == -63)
-    {score=score+1;}
+   const button = document.getElementById("buttons".concat(number));
+   button.style.width = 0;
+   button.style.height = 0;
+   button.style.padding = 0;
+
+   if (number == 1 && parseInt(monChoix.value) == 3)
+   {score=score+1;}
+   else if (number ==2 && parseInt(monChoix.value) == 1)
+   {score=score+1;}
+   console.log(monChoix.value, monChoix.text);
 }
 
-function Validation3 ()
-{
-    var reponse = document.getElementById("Id_rep3").value;
-
-    if (reponse=="Voyager 1")
-    {score=score+1;}
-}
-
-function Validation4 ()
-{
-    var reponse = parseint(document.getElementById("Id_rep4").value);
-
-    if (reponse== 243)
-    {score=score+1;}
+function terminer()
+ {
     document.getElementById('resultat').innerHTML = score;
-}
+    console.log("printed !");
+    score=0;
 
 
+    var index=1;
+    while (index!=5)
+    {
+        const button = document.getElementById("button".concat(index));
+        button.style.width = "auto";
+        button.style.height = "auto";
+        button.style.padding = "1%";
+        index= index+1;
+    }
+
+    index=1;
+    while (index!=3)
+    {
+        const button = document.getElementById("buttons".concat(index));
+        button.style.width = "auto";
+        button.style.height = "auto";
+        button.style.padding = "1%";
+        index= index+1;
+    }
+
+ }

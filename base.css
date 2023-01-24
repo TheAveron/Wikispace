@@ -19,6 +19,7 @@ body{
     display: block;
     height: auto;
     width: 100%;
+    line-height: 1.3em;
 }
 
 .navbar{
@@ -47,8 +48,6 @@ footer{
     background-color: rgba(0, 162, 255, 0.5);
     color: #fff;
     text-align: center;
-
-
 }
 
 a{

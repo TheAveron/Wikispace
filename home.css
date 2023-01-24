@@ -1,6 +1,6 @@
 @keyframes typing1 {
     from { width: 0; }
-    to { width:25ch; }
+    to { width:27ch; }
 }
 
 @keyframes typing2 {
@@ -23,46 +23,51 @@
     padding-top: 45vh;
     padding-bottom: 45vh;
     padding-left:10vw;
-    padding-right: 15vw;
+    padding-right: 10vw;
     background-position: right;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-    text-size-adjust:auto;
 }
 
 .titlebox .text{
-    width:0;
     white-space: nowrap;
 }
 
 .titlebox h1{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 0;
     max-width:fit-content;
     overflow: hidden;
     border-right: .15em solid transparent;
     animation: 
       typing1 3s steps(27, end) forwards,
-      blink .8s infinite;
+      blink .7s infinite;
 
     margin-bottom: 15px;
     font-weight: 300;
 }
 
 .titlebox p{
-
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    width: 0;
     font-size: 1em;
     max-width: fit-content;
     border-right: .15em solid transparent;
     overflow: hidden;
     animation: 
       typing2 3s steps(96, end) forwards,
-      blink .8s infinite;
+      blink .7s infinite;
     animation-delay: 3s;
 }
 
 @media (max-width:1050px) {
     .titlebox p{
         font-size:0.8em;
+        animation: none;
+        width: auto;
+        white-space: normal;
     }
 }
 
@@ -70,11 +75,14 @@
     .titlebox h1{
         animation: none;
         overflow:visible;
+        width: fit-content;
     }
     .titlebox p{
         animation: none;
         overflow:visible;
         font-size: 0.4em;
+        width: fit-content;
+        white-space: normal;
     }
     .titlebox{
         text-align: center;

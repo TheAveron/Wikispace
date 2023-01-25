@@ -40,7 +40,11 @@ function selection(number)
 
    if (number == 1 && parseInt(monChoix.value) == 3)
    {score=score+1;}
-   else if (number ==2 && parseInt(monChoix.value) == 1)
+   else if (number == 2 && parseInt(monChoix.value) == 1)
+   {score=score+1;}
+   else if (number == 3 && parseInt(monChoix.value) == 4)
+   {score=score+1;}
+   else if (number == 4 && parseInt(monChoix.value) == 2)
    {score=score+1;}
    console.log(monChoix.value, monChoix.text);
 }

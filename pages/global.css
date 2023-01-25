@@ -12,11 +12,15 @@ body{
     width: auto;
     height: 100%;
 
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     color: #020703;
 
     text-align: center;
     justify-content: center;
+
+    backdrop-filter: blur(2px) saturate(100%);
+    border: 2px solid rgba(209, 213, 219, 0.4);
+    border-radius: 1vh;
 }
 
 @media (max-width:800px) 

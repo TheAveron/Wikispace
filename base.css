@@ -34,12 +34,16 @@ body{
     padding: 1.5vh;
     color: white;
     border-radius: 10px;
+    border: 2px solid transparent;
 }
 
 .navbar a:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #020703;
     text-decoration: none;
+
+    backdrop-filter: blur(1px) saturate(100%);
+    border: 2px solid rgba(209, 213, 219, 0.4);
 }
 
 footer{
@@ -51,7 +55,7 @@ footer{
 }
 
 a{
-    color: rgb(0, 162, 255);
+    color: rgb(0, 102, 195);
 }
 
 a:hover, i:hover{

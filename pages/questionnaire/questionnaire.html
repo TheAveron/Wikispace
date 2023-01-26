@@ -35,28 +35,28 @@
 						<h3>Question 1</h3>
 						<p> Quel est le rayon de la Terre ? (réponse acceptée à la centaine près)</p>
 						<input type="text" class="reponse" name="Réponse 1" id="Id_rep1" value="">
-						<input id="button1" class="button-r" type="button" value="Valider" onclick="Validation(1);">
+						<input id="button1" class="button-r" type="button" value="Valider" onclick="validation(1);">
 					</div>
 					
 					<div class="question" id="q2">
 						<h3>Question 2</h3>
 						<p>Quelle est la température moyenne de la planète Mars ? (ne pas préciser l'unité, réponse acceptée à la dizaine de kelvin près)</p>
 						<input type="text" class="reponse" name="Réponse 2" id="Id_rep2" value="">
-						<input id="button2" class="button-r" type="button" value="Valider" onclick="Validation(2);">
+						<input id="button2" class="button-r" type="button" value="Valider" onclick="validation(2);">
 					</div>
 					
 					<div class="question" id="q3">
 						<h3>Question 3</h3>
 						<p>Combien de lunes possède Jupiter ? (seule la réponse exacte sera acceptée)</p>
 						<input type="text" class="reponse" name="Réponse 3" id="Id_rep3" value="">
-						<input id="button3" class="button-r" type="button" value="Valider" onclick="Validation(3);">
+						<input id="button3" class="button-r" type="button" value="Valider" onclick="validation(3);">
 					</div>
 					
 					<div class="question" id="q4">
 						<h3>Question 4</h3>
 						<p>Combien de temps dure un jour vénusien ? (ne pas préciser l'unité, seule la réponse exacte sera acceptée)</p>
 						<input type="text" class="reponse" name="Réponse 4" id="Id_rep4" value="">
-						<input id="button4" class="button-r" type="button" value="Valider" onclick="Validation(4);">
+						<input id="button4" class="button-r" type="button" value="Valider" onclick="validation(4);">
 						
 					</div>
 
@@ -108,6 +108,22 @@
 							<option value="4"> Deymos </option>
 						</select>
 						<input id="buttons4" class="button-v" type="button" value="Valider" onclick="selection(4);">
+
+					</div>
+
+					<div class="question" id="q9">
+						<h3>Question 9</h3>
+						<p>Mars est la quatrième planète du Système solaire.</p>
+						<input id="buttonvf1" class="button-v" type="button" value="Vrai" onclick="vf(1);">
+						<input id="buttonvf2" class="button-v" type="button" value="Faux" onclick="vf(2);">
+
+					</div>
+
+					<div class="question" id="q10">
+						<h3>Question 10</h3>
+						<p>L'eau est l'élément le plus présent dans l'atmosphère des planètes gazeuses.</p>
+						<input id="buttonvf3" class="button-v" type="button" value="Vrai" onclick="vf(3);">
+						<input id="buttonvf4" class="button-v" type="button" value="Faux" onclick="vf(4);">
 
 					</div>
 				</form>

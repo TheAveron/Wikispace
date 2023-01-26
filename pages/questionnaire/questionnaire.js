@@ -1,12 +1,8 @@
 var score;
 score=0;
 
-
-
-
-function Validation (number)
+function validation (number)
 {
-    
     console.log(number);
     const reponse = parseInt(document.getElementById("Id_rep".concat(number)).value);
     
@@ -53,6 +49,39 @@ function selection(number)
    console.log(monChoix.value, monChoix.text);
 }
 
+function vf(number)
+{
+    console.log(number);
+    const reponse = parseInt(document.getElementById("Id_rep".concat(number)).value);
+    
+    var index=number
+    if (number%2==0)
+    {
+        index=index-1
+    }
+    const max = index+2
+    
+    while (index!=max)
+    {
+        const button = document.getElementById("buttonvf".concat(index));
+
+        button.style.width = 0;
+        button.style.height = 0;
+        button.style.padding = 0;
+        index=index+1
+    }
+    
+    if (number == 1)
+    {score=score+3;}
+    else if (number == 4)
+    {score=score+3;}
+    else
+    {score=score-1;}
+
+    console.log(reponse);
+}
+
+
 function terminer()
  {
     document.getElementById('resultat').innerHTML = score;
@@ -74,6 +103,16 @@ function terminer()
     while (index!=5)
     {
         const button = document.getElementById("buttons".concat(index));
+        button.style.width = "auto";
+        button.style.height = "auto";
+        button.style.padding = "1%";
+        index= index+1;
+    }
+
+    index=1;
+    while (index!=5)
+    {
+        const button = document.getElementById("buttonvf".concat(index));
         button.style.width = "auto";
         button.style.height = "auto";
         button.style.padding = "1%";

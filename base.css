@@ -18,7 +18,7 @@ body{
     align-items: center;
     display: block;
     height: auto;
-    width: 100%;
+    width: auto;
     line-height: 1.3em;
 }
 
@@ -30,6 +30,7 @@ body{
 
 
 .navbar a{
+    background-color: transparent;
     margin: 0.3vh;
     padding: 1.5vh;
     color: white;

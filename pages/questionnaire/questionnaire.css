@@ -25,11 +25,10 @@ body{
     border-radius: 1vh;
 }
 
-h3,p{
+h1,h3,p{
     padding: 1%;
     margin-bottom: 1%;
 }
-
 
 .question .reponse, select{
     margin-top: 1%;
@@ -41,38 +40,23 @@ h3,p{
     color: black;
 }
 
-.button-r{
+.button{
     padding: 1%;
     border-radius: 10px;
     background-color: #020703;
     color: white;
 }
 
-.button-r:hover{
+.button:hover{
     color: #020703;
     background-color: white;
 }
-
-.button-v{
-    padding: 1%;
-    margin-bottom: 3%;
-    border-radius: 10px;
-    background-color: #020703;
-    color: white;
-
-}
-
-
-.button-v:hover{
-    color: #020703;
-    background-color: white;
-}
-
 
 .score{
     padding-top: 2%;
 }
 
 .score p{
+    margin-top: 2%;
     padding: 0;
 }

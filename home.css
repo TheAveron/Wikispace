@@ -96,8 +96,7 @@
     }
     .titlebox p{
         animation: none;
-        overflow:visible;
-        font-size: 0.4em;
+        overflow: visible;
         width: fit-content;
         white-space: normal;
     }
